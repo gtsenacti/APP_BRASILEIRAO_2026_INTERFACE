@@ -52,11 +52,11 @@
             // 
             btnSair.BackColor = Color.Red;
             btnSair.FlatStyle = FlatStyle.Popup;
-            btnSair.Font = new Font("Arial", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnSair.Font = new Font("Arial", 15.75F, FontStyle.Bold);
             btnSair.ForeColor = Color.White;
-            btnSair.Location = new Point(577, 35);
+            btnSair.Location = new Point(577, 27);
             btnSair.Name = "btnSair";
-            btnSair.Size = new Size(89, 42);
+            btnSair.Size = new Size(89, 64);
             btnSair.TabIndex = 1;
             btnSair.Text = "Sair";
             btnSair.TextAlign = ContentAlignment.MiddleRight;
@@ -67,12 +67,12 @@
             // 
             btnEntrar.BackColor = Color.ForestGreen;
             btnEntrar.FlatStyle = FlatStyle.Popup;
-            btnEntrar.Font = new Font("Arial", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnEntrar.Font = new Font("Arial", 15.75F, FontStyle.Bold);
             btnEntrar.ForeColor = Color.White;
             btnEntrar.ImageAlign = ContentAlignment.MiddleRight;
-            btnEntrar.Location = new Point(687, 35);
+            btnEntrar.Location = new Point(687, 27);
             btnEntrar.Name = "btnEntrar";
-            btnEntrar.Size = new Size(89, 42);
+            btnEntrar.Size = new Size(89, 64);
             btnEntrar.TabIndex = 0;
             btnEntrar.Text = "Entrar";
             btnEntrar.TextAlign = ContentAlignment.MiddleRight;

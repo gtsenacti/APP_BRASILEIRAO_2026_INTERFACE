@@ -28,5 +28,10 @@ namespace App_Brasileirao_2026
             frmAtualizar fa = new frmAtualizar();
             fa.ShowDialog();
         }
+
+        private void frmPrincipal_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

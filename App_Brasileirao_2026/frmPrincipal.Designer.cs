@@ -127,6 +127,7 @@
             Name = "frmPrincipal";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Sistema de Controle de Times -  Tela principal";
+            FormClosed += frmPrincipal_FormClosed;
             pnlPrincipal.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pnlTelaPrincipal).EndInit();
             ResumeLayout(false);
