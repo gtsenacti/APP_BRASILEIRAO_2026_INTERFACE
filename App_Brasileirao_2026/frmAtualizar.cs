@@ -16,5 +16,10 @@ namespace App_Brasileirao_2026
         {
             InitializeComponent();
         }
+
+        private void btnInserir_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

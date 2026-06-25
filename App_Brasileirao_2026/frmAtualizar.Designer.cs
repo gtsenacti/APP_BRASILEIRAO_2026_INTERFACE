@@ -161,6 +161,7 @@
             btnInserir.TabIndex = 1;
             btnInserir.Text = "Inserir";
             btnInserir.UseVisualStyleBackColor = false;
+            btnInserir.Click += btnInserir_Click;
             // 
             // pbAtualizar
             // 

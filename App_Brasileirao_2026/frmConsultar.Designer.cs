@@ -53,6 +53,7 @@
             btnConsulta.TabIndex = 1;
             btnConsulta.Text = "Consultar";
             btnConsulta.UseVisualStyleBackColor = false;
+            btnConsulta.Click += btnConsulta_Click;
             // 
             // pnlConsultar
             // 
