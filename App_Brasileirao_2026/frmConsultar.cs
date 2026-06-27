@@ -28,23 +28,42 @@ namespace App_Brasileirao_2026
                 case "A":
                     await SerieA();
                     break;
-
                 case "B":
-                    
+                    await SerieB();
                     break;
-
                 case "C":
-                    
+                    await SerieC();
                     break;
-
                 case "D":
-                    
+                    await SerieD();
                     break;
-
+                case "E":
+                    await SerieE();
+                    break;
                 default:
                     MessageBox.Show("Selecione a série.");
                     break;
             }
+        }
+
+        private async Task SerieE()
+        {
+            
+        }
+
+        private async Task SerieD()
+        {
+            
+        }
+
+        private async Task SerieC()
+        {
+            
+        }
+
+        private async Task SerieB()
+        {
+            
         }
 
         private async Task SerieA()
