@@ -48,22 +48,122 @@ namespace App_Brasileirao_2026
 
         private async Task SerieE()
         {
-            
+            string apiUrl = ApiRotasController.ConsultarSerieE;
+
+            using (HttpClient client = new HttpClient())
+            {
+                try
+                {
+                    client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                    HttpResponseMessage response = await client.GetAsync(apiUrl);
+
+                    if (response.IsSuccessStatusCode)
+                    {
+                        var jsonString = await response.Content.ReadAsStringAsync();
+                        var dados = JsonConvert.DeserializeObject<List<ConsultarSerieEModel>>(jsonString);
+
+                        dgvConsultar.DataSource = dados;
+                    }
+                    else
+                    {
+                        MessageBox.Show("Erro ao buscar dados da API: " + response.StatusCode);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Erro ao conectar à API: " + ex.Message);
+                }
+            }
         }
 
         private async Task SerieD()
         {
-            
+            string apiUrl = ApiRotasController.ConsultarSerieD;
+
+            using (HttpClient client = new HttpClient())
+            {
+                try
+                {
+                    client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                    HttpResponseMessage response = await client.GetAsync(apiUrl);
+
+                    if (response.IsSuccessStatusCode)
+                    {
+                        var jsonString = await response.Content.ReadAsStringAsync();
+                        var dados = JsonConvert.DeserializeObject<List<ConsultarSerieDModel>>(jsonString);
+
+                        dgvConsultar.DataSource = dados;
+                    }
+                    else
+                    {
+                        MessageBox.Show("Erro ao buscar dados da API: " + response.StatusCode);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Erro ao conectar à API: " + ex.Message);
+                }
+            }
         }
 
         private async Task SerieC()
         {
-            
+            string apiUrl = ApiRotasController.ConsultarSerieC;
+
+            using (HttpClient client = new HttpClient())
+            {
+                try
+                {
+                    client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                    HttpResponseMessage response = await client.GetAsync(apiUrl);
+
+                    if (response.IsSuccessStatusCode)
+                    {
+                        var jsonString = await response.Content.ReadAsStringAsync();
+                        var dados = JsonConvert.DeserializeObject<List<ConsultarSerieCModel>>(jsonString);
+
+                        dgvConsultar.DataSource = dados;
+                    }
+                    else
+                    {
+                        MessageBox.Show("Erro ao buscar dados da API: " + response.StatusCode);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Erro ao conectar à API: " + ex.Message);
+                }
+            }
         }
 
         private async Task SerieB()
         {
-            
+            string apiUrl = ApiRotasController.ConsultarSerieB;
+
+            using (HttpClient client = new HttpClient())
+            {
+                try
+                {
+                    client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                    HttpResponseMessage response = await client.GetAsync(apiUrl);
+
+                    if (response.IsSuccessStatusCode)
+                    {
+                        var jsonString = await response.Content.ReadAsStringAsync();
+                        var dados = JsonConvert.DeserializeObject<List<ConsultarSerieBModel>>(jsonString);
+
+                        dgvConsultar.DataSource = dados;
+                    }
+                    else
+                    {
+                        MessageBox.Show("Erro ao buscar dados da API: " + response.StatusCode);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Erro ao conectar à API: " + ex.Message);
+                }
+            }
         }
 
         private async Task SerieA()
